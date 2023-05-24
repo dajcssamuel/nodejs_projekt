@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gym Maxok</title>
+    <style>
+      body {
+        background-image: url(gym1.png);
+        max-height: 300px;
+        text-align: center;
+      }
+
+      h2 {
+        margin: 30px;
+      }
+
+      button {
+        text-decoration: none;
+        color: red;
+        margin-left: 200px;
+      }
+
+      table {
+        margin-left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Gym Maxok</h2>
+    <form method="post">
+      <table>
+        <tr>
+          <td>Név</td>
+          <td><input type="text" id="name" name="name" /></td>
+        </tr>
+        <tr>
+          <td>Súly(kg)</td>
+          <td><input type="text" id="suly" name="suly" /></td>
+        </tr>
+        <tr>
+          <td>Fekvenyomás max</td>
+          <td><input type="text" id="fekmax" name="fekmax" /></td>
+        </tr>
+        <tr>
+          <td>Gugolás Max</td>
+          <td><input type="text" id="gugmax" name="gugmax" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="sendPost()" id="sub" type="submit" value="Submit">
+              Hozzáad
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="add.js"></script>
+  </body>
+</html>
